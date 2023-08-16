@@ -6,7 +6,8 @@ let pokemonList = [
     },
     { 
     name: "Pikachu",
-    height: 4, types: ["static", "lightningrod"] 
+    height: 4, 
+    types: ["static", "lightningrod"] 
     },
     { 
     name: "Dewgong", 
