@@ -2,3 +2,10 @@ body {
     color: slategray;
     background-color: aliceblue;
 }
+
+.page-header {
+    border-bottom: 2px solid gray;
+    font-style: bold;
+    color: black;
+}
+
