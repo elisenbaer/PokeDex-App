@@ -26,7 +26,7 @@ let pokemonList = [
         document.write("This Pokemon is average.");
      }else {
         document.write("This Pokemon is small.");
-     }    
+     }   
 }
 
 
