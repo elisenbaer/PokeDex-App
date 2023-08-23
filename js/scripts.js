@@ -25,7 +25,7 @@ let pokemonList = [
      }else if (pokemonList[i].height < 10 && pokemonList[i].height > 5){
         document.write("<p>" + "This Pokemon is average." + "</p>");
      }else {
-        document.write("<p>" + "This Pokemon is small.<br><br><br>" + "</p>");
+        document.write("<p>" + "This Pokemon is small." + "</p>");
      }   
 }
 
