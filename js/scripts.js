@@ -29,3 +29,13 @@ let pokemonList = [
 //    }   
 // }
 
+pokemonList.forEach(function(value) {
+      document.write(`${value.name} <br> (height: ${value.height}) <br> (type: ${value.types}) <br><br>`);
+      if (value.height > 10){
+            document.write("<p>" + "This Pokemon is so big!" + "</p>");
+         }else if (value.height < 10 && value.height > 5){
+            document.write("<p>" + "This Pokemon is average." + "</p>");
+         }else {
+            document.write("<p>" + "This Pokemon is small." + "</p>");
+         }   
+})
