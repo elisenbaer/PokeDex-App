@@ -20,6 +20,8 @@ let pokemonRepository = (function() {
 let pokemon = {name: 'Charizard', height: 25, types: 'fire'};
 
 pokemonRepository.getAll();
+pokemonRepository.add(pokemon);
+
 
 // for (let i = 0; i < pokemonList.length; i++){
 //    document.write(`${pokemonList[i].name} <br> (height: ${pokemonList[i].height}) <br> (type: ${pokemonList[i].types}) <br><br>`);
