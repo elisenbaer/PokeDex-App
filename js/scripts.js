@@ -17,6 +17,7 @@ let pokemonRepository = (function() {
       types: ["water", "ice"] 
     },
    ];
+let pokemon = {name: 'Charizard', height: 25, types: 'fire'};
 
 
 // for (let i = 0; i < pokemonList.length; i++){
