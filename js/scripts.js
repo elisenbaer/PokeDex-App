@@ -17,6 +17,22 @@ let pokemonRepository = (function() {
       types: ["water", "ice"] 
     },
    ];
+   
+         function getAll() {
+            return pokemonList;
+         }
+
+         function add(pokemon) {
+            return pokemonList.push(pokemon);
+         }
+         
+         return {
+            getAll: getAll,
+            add: add,
+         };
+
+})();
+
 let pokemon = {name: 'Charizard', height: 25, types: 'fire'};
 
 pokemonRepository.getAll();
