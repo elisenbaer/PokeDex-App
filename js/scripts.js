@@ -33,6 +33,9 @@ let pokemonRepository = (function() {
          }
 
          function showDetails(pokemon){
+            console.log(pokemon.name)
+         }
+
          function add(pokemon) {
             return pokemonList.push(pokemon);
          }
