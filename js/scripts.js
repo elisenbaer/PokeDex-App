@@ -50,4 +50,6 @@ pokemonRepository.getAll();
 pokemonRepository.add(pokemon);
 
 
+pokemonRepository.getAll().forEach(function (pokemon) {
+    pokemonRepository.addListItem(pokemon);
 })
