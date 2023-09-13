@@ -29,12 +29,6 @@ let pokemonRepository = (function() {
          console.log(pokemon.name)
       });
    }
-
-   function showDetails(pokemon){
-      console.log(pokemon.name)
-   }
-
-
    
    function loadList() {
       return fetch(apiUrl).then(function (response) {
