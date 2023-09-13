@@ -53,6 +53,7 @@ let pokemonRepository = (function() {
    }
 
    function loadDetails(item) {
+      let url = item.detailsUrl;
    return {
       getAll: getAll,
       add: add,
