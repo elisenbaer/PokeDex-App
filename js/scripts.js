@@ -25,7 +25,13 @@ let pokemonRepository = (function() {
          }
 
          function add(pokemon) {
-            return pokemonList.push(pokemon);
+            if (
+               typeof pokemon === "object" && "name" in pokemon
+            ) {
+               repository.push(pokemon);
+            }  else {
+               console.log("pokemon is not correct");
+            }
          }
          
          return {
