@@ -76,7 +76,6 @@ let pokemonRepository = (function() {
 
 })();
 
-let pokemon = {name: 'Charizard', height: 25, types: 'fire'};
 
 pokemonRepository.getAll();
 pokemonRepository.add(pokemon);
