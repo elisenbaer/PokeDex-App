@@ -56,6 +56,7 @@ let pokemonRepository = (function() {
       let url = item.detailsUrl;
       return fetch(url).then(function (response) {
          return response.json();
+      }).then(function (details) {
    return {
       getAll: getAll,
       add: add,
