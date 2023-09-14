@@ -73,6 +73,7 @@ let pokemonRepository = (function() {
       });
    }
 
+   //Displays Pokemon Modal
    
    // let modalContainer = document.querySelector('#modal-container');
    
