@@ -3,6 +3,8 @@ let pokemonRepository = (function() {
    let pokemonList = [];
    let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=150';
    
+   
+   //adds object and name of each pokemon, pushes the pokemon to the pokemonList
    function add(pokemon) {
       if (
          typeof pokemon === "object" && "name" in pokemon
@@ -13,10 +15,12 @@ let pokemonRepository = (function() {
       }
    }      
    
+   //retrieves all items in the pokemonList
    function getAll() {
             return pokemonList;
          }
 
+   //creates the individual 'pokemon' buttons that contain their individual details
    function addListItem(pokemon){
       let pokemonList = document.querySelector('.pokemon-list');
       let listPokemon = document.createElement('li');
@@ -30,6 +34,7 @@ let pokemonRepository = (function() {
       });
    }
    
+   //retrieves information on each pokemon (including name and details) from apiUrl in json format
    function loadList() {
       return fetch(apiUrl).then(function (response) {
          return response.json();
@@ -46,6 +51,7 @@ let pokemonRepository = (function() {
       })
    }
 
+   //retrieves indivudal pokemon details from apiUrl 
    function loadDetails(item) {
       let url = item.detailsUrl;
       return fetch(url).then(function (response) {
@@ -59,12 +65,14 @@ let pokemonRepository = (function() {
       });
    }
 
+   //logs details of each pokemon to the console
    function showDetails(pokemon) {
       loadDetails(pokemon).then(function () {
          console.log(pokemon);
       });
    }
 
+   //call all functions through return to gain access to each
    return {
       getAll: getAll,
       add: add,
@@ -77,7 +85,7 @@ let pokemonRepository = (function() {
 })();
 
 
-
+//calling functions in above IIFE
 pokemonRepository. loadList (). then(function() {
    pokemonRepository.getAll().forEach(function (pokemon) {
       pokemonRepository.addListItem(pokemon);
