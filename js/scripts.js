@@ -74,10 +74,10 @@ let pokemonRepository = (function() {
    }
 
    //Displays Pokemon Modal
+   function showModal(pokemon)
+      let modalContainer = document.querySelector('#modal-container');
    
-   // let modalContainer = document.querySelector('#modal-container');
-   
-   // function showModal()
+
    
    
    //call all functions through return to gain access to each
