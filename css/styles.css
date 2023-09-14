@@ -27,9 +27,8 @@ body {
 
 }
 
-html, 
-body {
-  font-family: Arial, sans-serif;
+.pokemon-list {
+    list-style: none;
 }
 
 #modal-container {
@@ -70,7 +69,6 @@ body {
 
 .modal-close {
   float: right;
-  -webkit-appearance: none;
   border: 0;
   background: none;
   color: #777;
