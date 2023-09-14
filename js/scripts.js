@@ -33,7 +33,8 @@ let pokemonRepository = (function() {
          showDetails(pokemon);
          }
       });
-   }
+      )};
+   
    
    //retrieves information on each pokemon (including name and details) from apiUrl in json format
    function loadList() {
@@ -74,8 +75,9 @@ let pokemonRepository = (function() {
    }
 
    
-   let modalContainer = document.querySelector('#modal-container');
+   // let modalContainer = document.querySelector('#modal-container');
    
+   // function showModal()
    
    
    //call all functions through return to gain access to each
