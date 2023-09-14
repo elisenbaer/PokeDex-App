@@ -72,6 +72,11 @@ let pokemonRepository = (function() {
       });
    }
 
+   
+   let modalContainer = document.querySelector('#modal-container');
+   
+   
+   
    //call all functions through return to gain access to each
    return {
       getAll: getAll,
