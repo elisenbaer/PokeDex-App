@@ -4,21 +4,21 @@ let pokemonRepository = (function() {
    let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=150';
    
    
-   //adds object and name of each pokemon, pushes the pokemon to the pokemonList
-   function add(pokemon) {
-      if (
-         typeof pokemon === "object" && "name" in pokemon
-      ) {
-         pokemonList.push(pokemon);
-      }  else {
-         console.log("pokemon is not correct");
-      }
-   }      
-   
-   //retrieves all items in the pokemonList
-   function getAll() {
-            return pokemonList;
+      //adds object and name of each pokemon, pushes the pokemon to the pokemonList
+      function add(pokemon) {
+         if (
+            typeof pokemon === "object" && "name" in pokemon
+         ) {
+            pokemonList.push(pokemon);
+         }  else {
+            console.log("pokemon is not correct");
          }
+      }      
+      
+      //retrieves all items in the pokemonList
+      function getAll() {
+               return pokemonList;
+            }
 
    //creates the individual 'pokemon' buttons that contain their individual details
    function addListItem(pokemon){
