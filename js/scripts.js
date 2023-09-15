@@ -106,9 +106,7 @@ let pokemonRepository = (function() {
 
       //create types element for each pokemon
       let typesElement = document.createElement('p');
-      typesElement.innerText = 'TYPES: ' + pokemon.types
-
-      modalContainer.classList.add ('is-visible');
+      typesElement.innerText = 'TYPES: ' + pokemon.types;
 
       //adding elements to the modal
       modal.appendChild(closeButtonElement);
@@ -117,6 +115,8 @@ let pokemonRepository = (function() {
       modal.appendChild(heightElement);
       modal.appendChild(typesElement);
       modalContainer.appendChild(modal);
+
+      modalContainer.classList.add('is-visible');
 
    //call all functions through return to gain access to each
    return {
