@@ -75,7 +75,7 @@ let pokemonRepository = (function() {
    }
 
    //Displays Pokemon Modal
-   function showModal(pokemon)
+   function showModal(pokemon) {
       let modalContainer = document.querySelector('#modal-container');
 
       //clear existing modal content
