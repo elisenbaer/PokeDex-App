@@ -146,21 +146,3 @@ pokemonRepository. loadList (). then(function() {
   });
 });
 
-let dialogPromiseReject;
-
-function hideModal () {
-   let modalContainer = document.querySelector('#modal-container');
-   modalContainer.classList.remove('is-visible');
-
-   if (dialogPromiseReject) {
-      dialogPromiseReject();
-      dialogPromiseReject = null;
-   }
-}
-
-window.addEventListener('keydown', (e) => {
-   let modalContainer = document.querySelector('#modal-container');
-   if (e.key === 'Escape' && modalContainer.classList.contains('is-visible')) {
-      hideModal ();
-   }
-});
