@@ -102,6 +102,12 @@ let pokemonRepository = (function() {
       //create height element for each pokemon
       let heightElement = document.createElement('p');
       heightElement.innerText = 'HEIGHT: ' + pokemon.height;
+
+      //create types element for each pokemon
+      let typesElement = document.createElement('p');
+      typesElement.innerText = 'TYPES: ' + pokemon.types
+
+
    //call all functions through return to gain access to each
    return {
       getAll: getAll,
