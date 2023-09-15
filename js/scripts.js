@@ -83,13 +83,14 @@ let pokemonRepository = (function() {
       modal.classList.add('modal');
    
       //add new modal content
-   let closeButtonElement = document.createElement('button');
-   closeButtonElement.classList.add('modal-close');
-   closeButtonElement.innerText = 'X';
-   closeButtonElement.addEventListener('click', hideModal);
-   
-   let titleElement = document.createElement('h1');
-   titleElement.innerText = pokemon.name;
+         //create close button = "x" and hides modal when clicked
+      let closeButtonElement = document.createElement('button');
+      closeButtonElement.classList.add('modal-close');
+      closeButtonElement.innerText = 'X';
+      closeButtonElement.addEventListener('click', hideModal);
+
+
+      
 
    //call all functions through return to gain access to each
    return {
