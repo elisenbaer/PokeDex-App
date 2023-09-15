@@ -107,6 +107,13 @@ let pokemonRepository = (function() {
       let typesElement = document.createElement('p');
       typesElement.innerText = 'TYPES: ' + pokemon.types
 
+      //adding elements to the modal
+      modal.appendChild(closeButtonElement);
+      modal.appendChild(titleElement);
+      modal.appendChild(imageElement);
+      modal.appendChild(heightElement);
+      modal.appendChild(typesElement);
+      modalContainer.appendChild(modal);
 
    //call all functions through return to gain access to each
    return {
