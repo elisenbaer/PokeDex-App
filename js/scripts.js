@@ -98,6 +98,10 @@ let pokemonRepository = (function() {
       let imageElement = document.createElement('img');
       imageElement.classList.add('modal-img');
       imageElement.src = pokemon.imageUrl;
+
+      //create height element for each pokemon
+      let heightElement = document.createElement('p');
+      heightElement.innerText = 'HEIGHT: ' + pokemon.height;
    //call all functions through return to gain access to each
    return {
       getAll: getAll,
