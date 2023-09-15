@@ -90,7 +90,7 @@ let pokemonRepository = (function() {
       closeButtonElement.addEventListener('click', hideModal);
 
 
-      
+      //create and fill title element for modal = pokemon names
       let titleElement = document.createElement('h1');
       titleElement.innerText = pokemon.name;
 
