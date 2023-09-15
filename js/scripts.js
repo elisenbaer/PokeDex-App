@@ -94,6 +94,10 @@ let pokemonRepository = (function() {
       let titleElement = document.createElement('h1');
       titleElement.innerText = pokemon.name;
 
+      //create and fill image element for each pokemon
+      let imageElement = document.createElement('img');
+      imageElement.classList.add('modal-img');
+      imageElement.src = pokemon.imageUrl;
    //call all functions through return to gain access to each
    return {
       getAll: getAll,
