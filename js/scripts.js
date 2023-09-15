@@ -85,6 +85,7 @@ let pokemonRepository = (function() {
       //add new modal content
    let closeButtonElement = document.createElement('button');
    closeButtonElement.classList.add('modal-close');
+   closeButtonElement.innerText = 'Close';
    
    
    //call all functions through return to gain access to each
