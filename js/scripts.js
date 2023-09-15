@@ -107,6 +107,8 @@ let pokemonRepository = (function() {
       let typesElement = document.createElement('p');
       typesElement.innerText = 'TYPES: ' + pokemon.types
 
+      modalContainer.classList.add ('is-visible');
+
       //adding elements to the modal
       modal.appendChild(closeButtonElement);
       modal.appendChild(titleElement);
