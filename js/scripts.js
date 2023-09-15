@@ -118,6 +118,14 @@ let pokemonRepository = (function() {
 
       modalContainer.classList.add('is-visible');
 
+      modalContainer.addEventListener('click', (e) => {
+         let target = e.target;
+         if (target === modalContainer) {
+            hideModal();
+         }
+      });
+   }  
+
    //call all functions through return to gain access to each
    return {
       getAll: getAll,
