@@ -88,6 +88,9 @@ let pokemonRepository = (function() {
    closeButtonElement.innerText = 'X';
    closeButtonElement.addEventListener('click', hideModal);
    
+   let titleElement = document.createElement('h1');
+   titleElement.innerText = pokemon.name;
+
    //call all functions through return to gain access to each
    return {
       getAll: getAll,
