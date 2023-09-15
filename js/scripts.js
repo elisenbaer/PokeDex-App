@@ -91,6 +91,8 @@ let pokemonRepository = (function() {
 
 
       
+      let titleElement = document.createElement('h1');
+      titleElement.innerText = pokemon.name;
 
    //call all functions through return to gain access to each
    return {
