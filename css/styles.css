@@ -57,15 +57,17 @@ body {
   text-align: center;
 }
 
-.modal {
-  margin: auto;
-  display: inline-block;
-  box-sizing: border-box;
+.modal-1 {
+  margin-top: auto;
   background: #fff;
-  padding: 15px;
+  padding-top: 100px;
   width: 100%;
   max-width: 700px;
-  text-align: left;
+  text-align: center;
+}
+
+.row {
+  text-align: center;
 }
 
 .modal-close {
@@ -76,10 +78,6 @@ body {
   text-decoration: underline;
 }
 
-.modal h1 {
-  margin-top: 0;
-}
 
-.modal p {
-  margin-bottom: 0;
-}
+
+
